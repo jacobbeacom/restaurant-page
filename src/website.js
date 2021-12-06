@@ -1,3 +1,5 @@
+import loadHome from "./home";
+
 function createHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -74,7 +76,7 @@ function createFooter(){
     footer.classList.add('footer');
 
     const copyright = document.createElement('h3');
-    copyright.textContent = `©Jacob Beacom 2021 ${<a href="https://github.com/jacobbeacom"><i class="fab fa-github"></i></a>}`
+    copyright.textContent = `©Jacob Beacom 2021`
 
     footer.appendChild(copyright);
 
