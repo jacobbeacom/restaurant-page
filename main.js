@@ -1,2 +1,1 @@
-import initializeSite from "../src/website";
-initializeSite();
+console.log("hello buddy");
