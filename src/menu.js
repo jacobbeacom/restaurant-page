@@ -1,3 +1,5 @@
+import pizzaIcon from './pizzaicon.png';
+
 function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
@@ -15,7 +17,7 @@ function createMenuItem(num) {
     menuItem.classList.add('menu-item');
 
     const icon = document.createElement('img');
-    icon.src = 'src/pizzaicon.png';
+    icon.src = pizzaIcon;
     icon.alt = "a picture of a pizza in cartoon style";
 
     const descriptions = ["Pepperoni and Sausage", "Supreme", "Buffalo Chicken", "Margarita"];
