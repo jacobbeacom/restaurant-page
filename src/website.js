@@ -63,9 +63,9 @@ function createBody() {
 }
 
 function setActive(button) {
-    const navButtons = document.getElementsByClassName('navButton');
+    const navButtons = document.querySelectorAll('navButton');
     
-    navButtons.forEach(button => {
+    navButtons.forEach((button) => {
         if(button !== this) {
             button.classList.remove('active');
         }
