@@ -23,8 +23,8 @@ function createNav() {
     const homeButton = document.createElement('button');
     homeButton.classList.add('navButton');
     homeButton.textContent = 'Home';
-    homeButton.addEventListener('click', () => {
-        if (EventTarget.classList.contains('active')) return;
+    homeButton.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
         setActive(homeButton);
         loadHome();
     })
@@ -32,8 +32,8 @@ function createNav() {
     const menuButton = document.createElement('button');
     menuButton.classList.add('navButton');
     menuButton.textContent = 'Menu';
-    menuButton.addEventListener('click', () => {
-        if (EventTarget.classList.contains('active')) return;
+    menuButton.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
         setActive(menuButton);
         loadMenu();
     })
@@ -41,8 +41,8 @@ function createNav() {
     const contactButton = document.createElement('button');
     contactButton.classList.add('navButton');
     contactButton.textContent = 'Contact';
-    contactButton.addEventListener('click', () => {
-        if (EventTarget.classList.contains('active')) return;
+    contactButton.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
         setActive(contactButton);
         loadContact();
     })
