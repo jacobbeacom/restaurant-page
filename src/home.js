@@ -2,12 +2,13 @@ import pizzaGuy from './pizzaguy.jpg';
 
 function createHome() {
     const home = document.createElement('div');
+    home.classList.add('home');
 
     const homeImage = document.createElement('img');
     homeImage.src = pizzaGuy;
     homeImage.alt = `An obese asian gentleman sips a dark beverage from a glass
     mug. A deepdish pizza, a bowl of popcorn, and a plate of donuts rest on his lap. The man is 
-    seated on a red leather chair.`;
+    seated on a red leather chair.`
 
     const homeBio = document.createElement('p');
     homeBio.textContent = `Paul opened his doors to the public in 1942 after rave reviews from family and friends
