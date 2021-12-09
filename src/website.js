@@ -77,9 +77,9 @@ function createFooter(){
     const footer = document.createElement('footer');
     footer.classList.add('footer');
 
-    const copyright = document.createElement('h3');
+    const copyright = document.createElement('a');
     copyright.textContent = `©Jacob Beacom 2021`
-
+    copyright.setAttribute('href', 'https://github.com/jacobbeacom');
     footer.appendChild(copyright);
 
     return footer;
@@ -87,7 +87,6 @@ function createFooter(){
 
 function initializeSite(){
     const content = document.getElementById('content');
-
     content.appendChild(createHeader());
     content.appendChild(createBody());
     content.appendChild(createFooter());

@@ -6,9 +6,8 @@ function createHome() {
 
     const homeImage = document.createElement('img');
     homeImage.src = pizzaGuy;
-    homeImage.alt = `An obese asian gentleman sips a dark beverage from a glass
-    mug. A deepdish pizza, a bowl of popcorn, and a plate of donuts rest on his lap. The man is 
-    seated on a red leather chair.`
+    homeImage.alt = `Three men standing in a commercial kitchen with their arms around each others shoulders.
+    The man in the middle is holding a large margharita pizza on a white dish.`
 
     const homeBio = document.createElement('p');
     homeBio.textContent = `Paul opened his doors to the public in 1942 after rave reviews from family and friends
